@@ -6,3 +6,14 @@ btnTarefa.addEventListener('click',function(){
 console.log(inputTarefa.value)
 
 });
+
+function criarLi(){
+  document.createElement('li');
+  return li ;
+}
+
+function addLi(){
+  const li = li;
+  li.innerHTML = "texto";
+ulTarefas.appendChild(li)
+}
