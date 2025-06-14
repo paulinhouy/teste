@@ -1,37 +1,8 @@
-const relogio = document.querySelector('.relogio');
-const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const zerar = document.querySelector('.zerar');
-let segundos = 0;
+const inputTarefa = document.querySelector('.input-nova-tarefa')
+const ulTarefas = document.querySelector('.tarefas');
+const btnTarefa = document.querySelector( '.btn-tarefa');
 
-function iniciaRelogio(){
-    timer = setInterval(function(){
-    segundos++
-    relogio.innerHTML = criarHoraSegundos(segundos);
-  },1000)
-}
+btnTarefa.addEventListener('click',function(){
+console.log(inputTarefa.value)
 
-function criarHoraSegundos(segundos){
-  const data = new Date(segundos * 1000);
-  return data.toLocaleTimeString('pt-BR',{
-    hour12:false,
-    timeZone: 'GMT'
-  })
-}
-console.log(criarHoraSegundos(10))
-
-
-
-
-
-iniciar.addEventListener('click',function(event){
-iniciaRelogio();
-})
-
-pausar.addEventListener('click',function(event){
-clearInterval(timer);
-})
-
-zerar.addEventListener('click',function(event){
-})
-
+});
