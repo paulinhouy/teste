@@ -3,7 +3,6 @@ const ulTarefas = document.querySelector('.tarefas');
 const btnTarefa = document.querySelector( '.btn-tarefa');
 
 btnTarefa.addEventListener('click',function(){
-if (!inputTarefa.value) return
 addLi(inputTarefa.value);
 
 });
