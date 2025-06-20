@@ -42,6 +42,7 @@ function addLi(valueInput){
 btnTarefa.addEventListener('click',function(){
     addLi();
     clearInput();
+    salvarTarefas();
 })
 
 document.addEventListener('click',function(e){
@@ -51,3 +52,15 @@ document.addEventListener('click',function(e){
         el.parentElement.remove();
     }
 })
+function salvarTarefas(){
+    const liTarefas = ulTarefas.querySelectorAll('li');
+    const listaDeTarefas = [];
+
+    for (let tarefa of liTarefas){
+        let tarefaTexto = tarefa.innerText;
+        tarefaTexto = tarefaTexto.replace('Apagar','')
+        console.log(tarefaTexto);
+        listaDeTarefas.push(tarefaTexto)
+        console.log(listaDeTarefas)
+    }
+}
