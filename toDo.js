@@ -22,7 +22,10 @@ function criaBotaoApagar(li){
     const botaoApagar = document.createElement('button');
     botaoApagar.innerHTML= 'Apagar';
     li.appendChild(botaoApagar);
+    botaoApagar.classList.add('apagar');
+    botaoApagar.setAttribute('title','apagar esta tarefa')
 }
+
 function clearInput(){
 inputTarefa.value = "";
 inputTarefa.focus();
@@ -39,4 +42,12 @@ function addLi(valueInput){
 btnTarefa.addEventListener('click',function(){
     addLi();
     clearInput();
+})
+
+document.addEventListener('click',function(e){
+    const el = e.target;
+    if(el.classList.contains('apagar')){
+
+        el.parentElement.remove();
+    }
 })
