@@ -45,6 +45,10 @@ btnTarefa.addEventListener('click',function(){
     salvarTarefas();
 })
 
+
+
+
+let a = 0;
 document.addEventListener('click',function(e){
     const el = e.target;
     if(el.classList.contains('apagar')){
@@ -62,5 +66,8 @@ function salvarTarefas(){
         console.log(tarefaTexto);
         listaDeTarefas.push(tarefaTexto)
         console.log(listaDeTarefas)
+
+
+        
     }
 }
