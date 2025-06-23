@@ -68,11 +68,23 @@ function salvarTarefas(){
     }
 }
 
+
+
+
+//parametros de função
+
+
 const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
         return [valor1,valor2,valor3,valor4];
     
 };
 console.log(functionReturn(1,2,3));
+
+
+
+
+//funcao que retorna outra função
+//retorna uma função que retorna o nome + Rocha
 
 function retornaName(name){
     
