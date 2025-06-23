@@ -73,3 +73,14 @@ const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
     
 };
 console.log(functionReturn(1,2,3));
+
+function retornaName(name){
+    
+    return function(){
+        return name + ' ' + 'Rocha'
+    }
+}
+const nome = retornaName('Paulo');
+const nome2 = retornaName('João');
+console.log(nome());
+console.log(nome2());
