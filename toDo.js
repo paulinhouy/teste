@@ -96,3 +96,28 @@ const nome = retornaName('Paulo');
 const nome2 = retornaName('João');
 console.log(nome());
 console.log(nome2());
+
+
+//funçoes de callback
+
+function f1 (){
+    console.log('f1')
+    
+}
+f1()
+
+    function f2(){
+        console.log('f2');
+         
+    }
+     if( f2() === true){
+        function f3 (){
+            console.log('f3');
+        }}
+
+        else{
+            console.log('olá mundo')
+        }
+    
+
+
