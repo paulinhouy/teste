@@ -84,9 +84,9 @@ function dizerSobrenome(nome){
     console.log("Olá, " + nome + "!"+ sobrenome );
 }
 
-function processarEntradaUsuario(callbak) {
+function processarEntradaUsuario(funcao) {
   const nome = "Maria"; // Simulando entrada do usuário
-  callbak(nome);
+  funcao(nome);
 }
 
 processarEntradaUsuario(dizerOla);
