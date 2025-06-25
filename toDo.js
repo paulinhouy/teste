@@ -73,3 +73,22 @@ const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
     
 };
 console.log(functionReturn(1,2,3));
+const sobrenome = "José";
+function dizerOla(nome) {
+  console.log("Olá, " + nome + "!"+ sobrenome );
+  
+}
+
+function dizerSobrenome(nome){
+    const sobrenome = "José";
+    console.log("Olá, " + nome + "!"+ sobrenome );
+}
+
+function processarEntradaUsuario(callbak) {
+  const nome = "Maria"; // Simulando entrada do usuário
+  callbak(nome);
+}
+
+processarEntradaUsuario(dizerOla);
+processarEntradaUsuario(dizerSobrenome);
+
