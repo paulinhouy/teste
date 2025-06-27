@@ -68,12 +68,19 @@ function salvarTarefas(){
     }
 }
 
+
+
+
+//parametros de função
+
+
 const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
         return [valor1,valor2,valor3,valor4];
     
 };
 console.log(functionReturn(1,2,3));
 
+<<<<<<< HEAD
 function dizerNome(funcao){
     const nome = 'paulo';
     funcao(nome);
@@ -94,3 +101,46 @@ function dizerNomeDoMeio(nome,sobrenome){
     console.log('olá'+ nome + ' ' + sobrenome + ' ' +  nomeDoMeio + '!')
 }
 dizerNome(dizerSobrenome)
+=======
+
+
+
+//funcao que retorna outra função
+//retorna uma função que retorna o nome + Rocha
+
+function retornaName(name){
+    
+    return function(){
+        return name + ' ' + 'Rocha'
+    }
+}
+const nome = retornaName('Paulo');
+const nome2 = retornaName('João');
+console.log(nome());
+console.log(nome2());
+
+
+//funçoes de callback
+
+function f1 (){
+    console.log('f1')
+    
+}
+f1()
+
+    function f2(){
+        console.log('f2');
+         
+    }
+     if( f2() === true){
+        function f3 (){
+            console.log('f3');
+        }}
+
+        else{
+            console.log('olá mundo')
+        }
+    
+
+
+>>>>>>> feee9394e2fc283feca959f0b07abca1f3a92a09
