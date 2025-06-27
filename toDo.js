@@ -73,22 +73,24 @@ const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
     
 };
 console.log(functionReturn(1,2,3));
-const sobrenome = "José";
-function dizerOla(nome) {
-  console.log("Olá, " + nome + "!"+ sobrenome );
-  
+
+function dizerNome(funcao){
+    const nome = 'paulo';
+    funcao(nome);
+
 }
 
 function dizerSobrenome(nome){
-    const sobrenome = "José";
-    console.log("Olá, " + nome + "!"+ sobrenome );
+    const sobrenome = 'josé';
+    console.log('olá'+ nome + ' ' + sobrenome + '!');
+ 
+
+
+    dizerNomeDoMeio(nome,sobrenome)
 }
 
-function processarEntradaUsuario(funcao) {
-  const nome = "Maria"; // Simulando entrada do usuário
-  funcao(nome);
+function dizerNomeDoMeio(nome,sobrenome){
+    const nomeDoMeio = "santos"
+    console.log('olá'+ nome + ' ' + sobrenome + ' ' +  nomeDoMeio + '!')
 }
-
-processarEntradaUsuario(dizerOla);
-processarEntradaUsuario(dizerSobrenome);
-
+dizerNome(dizerSobrenome)
