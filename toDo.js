@@ -80,7 +80,7 @@ const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
 };
 console.log(functionReturn(1,2,3));
 
-<<<<<<< HEAD
+
 function dizerNome(funcao){
     const nome = 'paulo';
     funcao(nome);
@@ -142,5 +142,3 @@ f1()
         }
     
 
-
->>>>>>> feee9394e2fc283feca959f0b07abca1f3a92a09
