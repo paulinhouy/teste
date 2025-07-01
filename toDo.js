@@ -120,4 +120,18 @@ f1()
         }
     
 
+        function retornaObjeto(){
+            return {
+                nome: 'Paulo',
+                sobrenome: 'Rocha',
+                idade: 30,
+                fala(){
+                    console.log(`Olá, meu nome é ${this.nome} ${this.sobrenome} e tenho ${this.idade} anos.`);
+                            }
+            }
+        }
+        //chamando a função e acessando o nome do objeto retornado
+        const objeto = retornaObjeto();
+        console.log(objeto.fala());
+
 
