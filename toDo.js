@@ -100,8 +100,7 @@ function dizerNomeDoMeio(nome,sobrenome){
     const nomeDoMeio = "santos"
     console.log('olá'+ nome + ' ' + sobrenome + ' ' +  nomeDoMeio + '!')
 }
-dizerNome(dizerSobrenome)
-=======
+dizerNome(dizerSobrenome);
 
 
 
@@ -141,4 +140,34 @@ f1()
             console.log('olá mundo')
         }
     
+
+//functions que não vão para o escopo global
+
+(function somar (a,b){
+console.log( a + b );
+const nome1 = 'paulo';
+console.log(nome1)
+}(2,10))
+
+const nome1 = 'josé';
+console.log(nome1)
+
+
+
+function object(nome,sobrenome){
+    return {
+        nome: 'paulo',
+        sobrenome:'josé',
+        fala: function(){
+        
+            
+            return `${this.nome}  ${this.sobrenome}`
+        }
+    }
+
+}
+const p1 = object()
+const p2 = object('maria','joaquina')
+console.log(p1.fala())
+console.log(p2.fala())
 
