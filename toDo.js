@@ -81,6 +81,27 @@ const functionReturn  = (valor1 = 3,valor2 = 2,valor3 = 0,valor4 = 1 ) => {
 console.log(functionReturn(1,2,3));
 
 
+function dizerNome(funcao){
+    const nome = 'paulo';
+    funcao(nome);
+
+}
+
+function dizerSobrenome(nome){
+    const sobrenome = 'josé';
+    console.log('olá'+ nome + ' ' + sobrenome + '!');
+ 
+
+
+    dizerNomeDoMeio(nome,sobrenome)
+}
+
+function dizerNomeDoMeio(nome,sobrenome){
+    const nomeDoMeio = "santos"
+    console.log('olá'+ nome + ' ' + sobrenome + ' ' +  nomeDoMeio + '!')
+}
+dizerNome(dizerSobrenome);
+
 
 
 //funcao que retorna outra função
@@ -120,6 +141,7 @@ f1()
         }
     
 
+<<<<<<< HEAD
         function retornaObjeto(){
             return {
                 nome: 'Paulo',
@@ -134,4 +156,35 @@ f1()
         const objeto = retornaObjeto();
         console.log(objeto.fala());
 
+=======
+//functions que não vão para o escopo global
+
+(function somar (a,b){
+console.log( a + b );
+const nome1 = 'paulo';
+console.log(nome1)
+}(2,10))
+
+const nome1 = 'josé';
+console.log(nome1)
+
+
+
+function object(nome,sobrenome){
+    return {
+        nome: 'paulo',
+        sobrenome:'josé',
+        fala: function(){
+        
+            
+            return `${this.nome}  ${this.sobrenome}`
+        }
+    }
+
+}
+const p1 = object()
+const p2 = object('maria','joaquina')
+console.log(p1.fala())
+console.log(p2.fala())
+>>>>>>> 8b470b9534202cce9ce6c53148a58d010e351426
 
