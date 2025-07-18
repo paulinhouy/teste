@@ -202,10 +202,22 @@ function Produto  (nome,preco,estoque) {
 
     Object.defineProperties (this, {
     nome: {
+enumerable: true, //mostra a chave
+        value: estoque, //valor
+        writable: true, //pode alterar
+        configurable: true //configuravel
 
     },
-    preco: {},
+    preco: {
+        enumerable: true, //mostra a chave
+        value: estoque, //valor
+        writable: true, //pode alterar
+        configurable: true //configuravel
+
+    },
     })
 }
+const p11 = new Produto ('Camiseta ',20,3);
+console.log(Object.keys(p1));
 
 
