@@ -203,14 +203,14 @@ function Produto  (nome,preco,estoque) {
     Object.defineProperties (this, {
     nome: {
 enumerable: true, //mostra a chave
-        value: estoque, //valor
+        value: nome, //valor
         writable: true, //pode alterar
         configurable: true //configuravel
 
     },
     preco: {
         enumerable: true, //mostra a chave
-        value: estoque, //valor
+        value: preco, //valor
         writable: true, //pode alterar
         configurable: true //configuravel
 
