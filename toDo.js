@@ -141,7 +141,6 @@ f1()
         }
     
 
-<<<<<<< HEAD
         function retornaObjeto(){
             return {
                 nome: 'Paulo',
@@ -156,8 +155,9 @@ f1()
         const objeto = retornaObjeto();
         console.log(objeto.fala());
 
-=======
 //functions que não vão para o escopo global
+
+
 
 (function somar (a,b){
 console.log( a + b );
@@ -186,6 +186,26 @@ const p1 = object()
 const p2 = object('maria','joaquina')
 console.log(p1.fala())
 console.log(p2.fala())
->>>>>>> 8b470b9534202cce9ce6c53148a58d010e351426
+
+//define propieties
+
+function Produto  (nome,preco,estoque) {
+    Object.defineProperty(this,'estoque', {
+        enumerable: true, //mostra a chave
+        value: estoque, //valor
+        writable: true, //pode alterar
+        configurable: true //configuravel
+
+    });
+
+    
+
+    Object.defineProperties (this, {
+    nome: {
+
+    },
+    preco: {},
+    })
+}
 
 
