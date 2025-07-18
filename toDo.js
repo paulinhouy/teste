@@ -218,7 +218,7 @@ enumerable: true, //mostra a chave
     })
 }
 const p11 = new Produto ('Camiseta ',20,3);
-console.log(Object.keys(p1));
+console.log(Object.keys(p11));
 
 
 
