@@ -254,7 +254,7 @@ Object.defineProperty(usuario,'senha',{
 enumerable: false,
 configurable: false,
 get: function (){
-    return this.senha
+    return this._senha
 },
 set: function (valor){
     if(valor !== 'string' && valor.lengh >= 6){
