@@ -250,8 +250,13 @@ produto.preco = 'caro'; // Preço inválido
 
 const usuario = {
 
-    senha
+    senha: 12345,
+    
 }
+Object.defineProperty(usuario,'123456',{
+enumerable: true
+
+})
 
 
 
