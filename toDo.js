@@ -252,15 +252,26 @@ const usuario =   {
 }
 Object.defineProperty(usuario,'senha',{
 enumerable: false,
+configurable = false,
 get: function (){
     return this.senha
 },
 set: function (valor){
-    
+    if(valor !== 'string' && valor.lengh >= 6){
+        this._senha
+    }
+    else{
+        console.log('digite uma senha com no minimo 6 numeros')
+    }
     
 }
 
 })
+
+usuario.senha = 123456
+console.log(usuario.senha)
+
+usuario.senha = 123
 console.log(usuario.senha)
 
 
