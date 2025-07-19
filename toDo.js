@@ -248,15 +248,19 @@ produto.preco = 'caro'; // Preço inválido
 
 //exercicios getter e setter 
 
-const usuario = {
-
-    senha: 12345,
+const usuario =   {
+}
+Object.defineProperty(usuario,'senha',{
+enumerable: false,
+get: function (){
+    return this.senha
+},
+set: function (valor){
     
 }
-Object.defineProperty(usuario,'123456',{
-enumerable: true
 
 })
+console.log(usuario.senha)
 
 
 
