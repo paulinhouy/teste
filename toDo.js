@@ -252,7 +252,7 @@ const usuario =   {
 }
 Object.defineProperty(usuario,'senha',{
 enumerable: false,
-configurable = false,
+configurable: false,
 get: function (){
     return this.senha
 },
