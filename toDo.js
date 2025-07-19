@@ -223,3 +223,36 @@ console.log(Object.keys(p11));
 
 
 
+
+const produto = {};
+Object.defineProperty(produto, 'preco', {
+  enumerable: true,
+  configurable: true,
+  get: function () {
+    return this._preco;
+  },
+  set: function (valor) {
+    if (typeof valor === 'number') {
+      this._preco = valor;
+    } else {
+      console.log('Preço inválido');
+    }
+  }
+});
+
+produto.preco = 100;
+console.log(produto.preco); // 100
+
+produto.preco = 'caro'; // Preço inválido
+
+
+//exercicios getter e setter 
+
+const usuario = {
+
+    senha
+}
+
+
+
+
