@@ -257,21 +257,30 @@ get: function (){
     return this._senha,this._preco
 
 },
-set: function (valor){
+set: function (valor,preco){
     if(valor !== 'string' && valor.lengh >= 6){
         this._senha
+        
+    }
+    else {
+        console.log('digite uma senha com no minimo 6 numeros')
+    }
+
+    if(preco !== 'string' && preco.lengh <= 3 ){
         this._preco
     }
     else{
-        console.log('digite uma senha com no minimo 6 numeros')
+        console.log('digite um preco valido')
     }
     
 }
 
 })
 
+usuario.preco = 154
 usuario.senha = 123456
 console.log(usuario.senha)
+console.log9(usuario.preco)
 
 usuario.senha = 123
 console.log(usuario.senha)
