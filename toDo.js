@@ -250,15 +250,17 @@ produto.preco = 'caro'; // Preço inválido
 
 const usuario =   {
 }
-Object.defineProperty(usuario,'senha',{
+Object.defineProperty(usuario,'senha','preco',{
 enumerable: false,
 configurable: false,
 get: function (){
-    return this._senha
+    return this._senha,this._preco
+
 },
 set: function (valor){
     if(valor !== 'string' && valor.lengh >= 6){
         this._senha
+        this._preco
     }
     else{
         console.log('digite uma senha com no minimo 6 numeros')
