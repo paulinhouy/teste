@@ -258,7 +258,7 @@ get: function (){
 
 },
 set: function (valor){
-    if(valor !== 'string' && valor.lengh >= 6){
+    if(valor !== 'string' && valor.length >= 6){
         this._senha
         
     }
@@ -280,7 +280,7 @@ get: function (){
 },
 set: function (precoo){
 
-    if(precoo !== 'string' && precoo.lengh <= 3 ){
+    if(precoo !== 'string' && precoo.length <= 3 ){
         this._precoo
     }
     else{
@@ -292,11 +292,11 @@ set: function (precoo){
 })
 
 usuario.precoo = 154
-usuario.senha = 123456
+usuario.senha = '12345331'
 console.log(usuario.senha)
 console.log(usuario.precoo)
 
-usuario.senha = 123
+usuario.senha = '1231'
 console.log(usuario.senha)
 
 
