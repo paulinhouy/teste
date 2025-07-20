@@ -294,7 +294,7 @@ set: function (precoo){
 usuario.precoo = 154
 usuario.senha = 123456
 console.log(usuario.senha)
-console.log9(usuario.preco)
+console.log(usuario.precoo)
 
 usuario.senha = 123
 console.log(usuario.senha)
