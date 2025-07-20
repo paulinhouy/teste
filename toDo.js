@@ -280,7 +280,7 @@ get: function (){
 },
 set: function (valor){
 
-    if(typeof valor === 'number' && valor.length <= 3 ){
+    if(typeof valor === 'number' && String(valor).length <= 3 ){
         this._preco = valor;
     }
     else{
