@@ -172,8 +172,8 @@ console.log(nome1)
 
 function object(nome,sobrenome){
     return {
-        nome: 'paulo',
-        sobrenome:'josé',
+        nome: nome || 'paulo',
+        sobrenome:sobrenome || 'jose',
         fala: function(){
         
             
