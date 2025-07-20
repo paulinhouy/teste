@@ -259,7 +259,7 @@ get: function (){
 },
 set: function (valor){
     if(valor !== 'string' && valor.length >= 6){
-        this._senha
+        this._senha = valor;
         
     }
     else {
@@ -278,10 +278,10 @@ get: function (){
     return this._preco
 
 },
-set: function (precoo){
+set: function (valor){
 
-    if(precoo !== 'string' && precoo.length <= 3 ){
-        this._precoo
+    if(typeof valor === 'number' && valor.length <= 3 ){
+        this._preco = valor;
     }
     else{
         console.log('digite um preco valido')
@@ -291,11 +291,10 @@ set: function (precoo){
 
 })
 
-usuario.precoo = 154
+usuario.preco = 15
+console.log(usuario.preco)
 usuario.senha = '12345331'
 console.log(usuario.senha)
-console.log(usuario.precoo)
-
 usuario.senha = '1231'
 console.log(usuario.senha)
 
