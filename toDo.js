@@ -250,14 +250,14 @@ produto.preco = 'caro'; // Preço inválido
 
 const usuario =   {
 }
-Object.defineProperty(usuario,'senha','preco',{
+Object.defineProperty(usuario,'senha',{
 enumerable: false,
 configurable: false,
 get: function (){
-    return this._senha,this._preco
+    return this._senha
 
 },
-set: function (valor,preco){
+set: function (valor){
     if(valor !== 'string' && valor.lengh >= 6){
         this._senha
         
@@ -266,8 +266,22 @@ set: function (valor,preco){
         console.log('digite uma senha com no minimo 6 numeros')
     }
 
-    if(preco !== 'string' && preco.lengh <= 3 ){
-        this._preco
+    
+}
+
+})
+
+Object.defineProperty(usuario,'preco',{
+enumerable: false,
+configurable: false,
+get: function (){
+    return this._preco
+
+},
+set: function (precoo){
+
+    if(precoo !== 'string' && precoo.lengh <= 3 ){
+        this._precoo
     }
     else{
         console.log('digite um preco valido')
@@ -277,7 +291,7 @@ set: function (valor,preco){
 
 })
 
-usuario.preco = 154
+usuario.precoo = 154
 usuario.senha = 123456
 console.log(usuario.senha)
 console.log9(usuario.preco)
