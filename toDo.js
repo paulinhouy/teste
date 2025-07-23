@@ -301,3 +301,6 @@ console.log(usuario.senha)
 
 
 
+//Prototypes 
+
+const pessoaas = paulo
