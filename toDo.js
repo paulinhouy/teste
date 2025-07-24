@@ -341,7 +341,10 @@ function Carro (marca,modelo) {
 Object.defineProperty(Carro.prototype,'falar', {
     value: function (){
         console.log(`Este carro é um ${this.marca} modelo ${this.modelo}`)
-    }
+    },
+    writable: true,
+  enumerable: true,
+  configurable: true
 
 })
 const Carrinho = new Carro('fiat','XYZ')
