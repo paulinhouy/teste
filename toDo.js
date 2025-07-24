@@ -340,7 +340,9 @@ function Carro (marca,modelo) {
 }
 Object.defineProperty(Carro.prototype,'falar', {
     value: function (){
-        console.log(`Este carro é um ${this.marca}`)
+        console.log(`Este carro é um ${this.marca} modelo ${this.modelo}`)
     }
 
 })
+const Carrinho = new Carro('fiat','XYZ')
+Carrinho.falar() 
