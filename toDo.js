@@ -349,3 +349,20 @@ Object.defineProperty(Carro.prototype,'falar', {
 })
 const Carrinho = new Carro('fiat','XYZ')
 Carrinho.falar() 
+
+
+
+
+
+
+
+
+
+ /* Exercício: Conta Bancária com Saldo Protegido
+Crie uma função construtora chamada ContaBancaria(cliente, saldoInicial).
+Você deve:
+Armazenar o cliente e o saldoInicial.
+Usar Object.defineProperty para:
+Criar uma propriedade chamada saldo no prototype, que seja apenas de leitura (get, sem set), e retorne o saldo atual.
+Criar no prototype um método depositar(valor) que aumenta o saldo.
+Criar no prototype um método sacar(valor) que diminui o saldo, mas só se houver saldo suficiente. Caso contrário, mostrar mensagem: "Saldo insuficiente". */
