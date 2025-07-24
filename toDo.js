@@ -303,11 +303,26 @@ console.log(usuario.senha)
 
 //Prototypes 
 
-function OlaPessoa(nome){
-    this.nome = nome;
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
 
-OlaPessoa.prototype.falar = function (){
-    console.log(`Meu nome é ${this.nome}`)
-}}
-const pessoal = new OlaPessoa ('paulo');
-pessoal.falar()
+// Adicionando um método usando defineProperty no prototype
+Object.defineProperty(Pessoa.prototype, 'falar', {
+  value: function () {
+    console.log(`Meu nome é ${this.nome}`);
+  },
+  writable: true,       // Pode ser sobrescrita
+  enumerable: false,    // Não aparece em for...in
+  configurable: true    // Pode ser apagada
+});
+
+const p111 = new Pessoa('Paulo', 18);
+
+p111.falar(); // Meu nome é Paulo
+
+// Testando a enumerabilidade
+for (let chave in p111) {
+  console.log(chave); // Mostra apenas nome e idade, não mostra 'falar'
+}
