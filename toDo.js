@@ -335,6 +335,12 @@ for (let chave in p111) {
 //Objetivo: praticar defineProperty com value.
 
 function Carro (marca,modelo) {
-    this.carro = carro,
+    this.marca = marca,
     this.modelo = modelo
 }
+Object.defineProperty(Carro.prototype,'falar', {
+    value: function (){
+        console.log(`Este carro é um ${this.marca}`)
+    }
+
+})
