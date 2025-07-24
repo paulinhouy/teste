@@ -326,3 +326,15 @@ p111.falar(); // Meu nome é Paulo
 for (let chave in p111) {
   console.log(chave); // Mostra apenas nome e idade, não mostra 'falar'
 }
+
+
+
+//Exercício 1: Criar método com defineProperty no prototype
+//Crie uma função construtora Carro(marca, modelo) e adicione um método chamado descricao ao prototype usando Object.defineProperty. Esse método deve retornar:
+// "Este carro é um [marca] modelo [modelo]".
+//Objetivo: praticar defineProperty com value.
+
+function Carro (marca,modelo) {
+    this.carro = carro,
+    this.modelo = modelo
+}
