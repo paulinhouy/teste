@@ -305,4 +305,9 @@ console.log(usuario.senha)
 
 function OlaPessoa(nome){
     this.nome = nome;
-}
+
+OlaPessoa.prototype.falar = function (){
+    console.log(`Meu nome é ${this.nome}`)
+}}
+const pessoal = new OlaPessoa ('paulo');
+pessoal.falar()
