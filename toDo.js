@@ -369,21 +369,27 @@ Criar no prototype um método sacar(valor) que diminui o saldo, mas só se houve
 
 function ContaBancaria (cliente,saldoInicial) {
     this.cliente = cliente
-    this._saldoInicial = saldoInicial;
+    this._saldo = saldoInicial;
 
 }
 Object.defineProperty(ContaBancaria.prototype,'saldo',{
     get:function () {
-        this._saldoInicial = saldoInicial
+    return this._saldo
     }
 })
 
-ContaBancaria.prototype.depositar = function (){
-    this._saldo += saldo
+ContaBancaria.prototype.depositar = function (valor){
+    this._saldo += valor
 }
-ContaBancaria.prototype.sacar = function (){
-    this._saldo -= saldo
+ContaBancaria.prototype.sacar = function (valor){
+    this._saldo -= valor
 }
 
 const conta = new ContaBancaria('paulo',1000)
 console.log(conta)
+
+conta.depositar(100)
+console.log(conta.saldo)
+
+conta.sacar(500)
+console.log(conta.saldo)
