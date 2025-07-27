@@ -427,10 +427,11 @@ OlaProduto.diminui(60)
 console.log(OlaProduto._preco)
 
 function Camiseta (nome,preco,cor){
-    Pessoa.call(this, nome, preco); // pega nome e idade de Pessoa
+    Product.call(this, nome, preco); // pega nome e idade de Pessoa
   this.cor = cor;
 
 }
+Camiseta.prototype = Object.create(Product.prototype);
 
 
 
