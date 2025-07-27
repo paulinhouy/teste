@@ -441,8 +441,8 @@ const OlaCamiseta = new Camiseta('tshirt',17,'red')
 console.log(OlaCamiseta)
 OlaCamiseta.aumenta(50)
 console.log(OlaCamiseta._preco)
-console.log(OlaProduto instanceof Product)
-console.log(OlaProduto instanceof Camiseta)
+console.log(Product.prototype)
+console.log(Camiseta.prototype)
 
 
 
