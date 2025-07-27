@@ -422,7 +422,9 @@ Product.prototype.diminui = function (valor){
 const OlaProduto = new Product('paulo',17)
 console.log(OlaProduto)
 OlaProduto.aumenta(50)
-console.log(OlaProduto.valor)
+console.log(OlaProduto._preco)
+OlaProduto.diminui(60)
+console.log(OlaProduto._preco)
 
 
 
