@@ -393,3 +393,23 @@ console.log(conta.saldo)
 
 conta.sacar(500)
 console.log(conta.saldo)
+
+
+
+
+//herança com prototypes e metodos de functions construtor
+
+function Product (nome,preco){
+    this.nome = nome;
+    this._preco = preco;
+
+}
+Object.defineProperties(Product.prototype.mostrar,'mostrar',{
+    get: function () {
+        return this._preco
+    }
+
+})
+
+
+
