@@ -377,3 +377,7 @@ Object.defineProperty(ContaBancari.prototype,'saldo'{
         return saldo
     }
 })
+
+ContaBancaria.prototype.depositar = function (){
+    saldoInicial += saldoInicial
+}
