@@ -378,6 +378,12 @@ Object.defineProperty(ContaBancari.prototype,'saldo'{
     }
 })
 
-ContaBancaria.prototype.depositar = function (){
-    saldoInicial += saldoInicial
+ContaBancaria.prototype.depositar = function (valor){
+    saldoInicial += valor
 }
+ContaBancaria.prototype.sacar = function (valor){
+    saldoInicial -= valor 
+}
+
+ContaBancaria('paulo',1000)
+ContaBancaria.depositar(100)
