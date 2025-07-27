@@ -385,3 +385,5 @@ ContaBancaria.prototype.sacar = function (){
     this._saldo -= saldo
 }
 
+const conta = new ContaBancaria('paulo',1000)
+console.log(conta)
