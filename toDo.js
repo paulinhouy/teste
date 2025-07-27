@@ -432,6 +432,9 @@ function Camiseta (nome,preco,cor){
 
 }
 Camiseta.prototype = Object.create(Product.prototype);
+Camiseta.prototype.constructor = Camiseta;
+console.log(Product.prototype)
+console.log(Camiseta.prototype)
 
 
 
