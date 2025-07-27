@@ -411,5 +411,11 @@ Object.defineProperties(Product.prototype.mostrar,'mostrar',{
 
 })
 
+Product.prototype.aumenta = function (valor){
+    this._saldo += valor;
+}
+
+
+
 
 
