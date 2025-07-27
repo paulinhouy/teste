@@ -415,6 +415,10 @@ Product.prototype.aumenta = function (valor){
     this._saldo += valor;
 }
 
+Product.prototype.diminui = function (valor){
+    this._saldo -= valor;
+}
+
 
 
 
