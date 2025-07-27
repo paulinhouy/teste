@@ -404,7 +404,7 @@ function Product (nome,preco){
     this._preco = preco;
 
 }
-Object.defineProperties(Product.prototype.mostrar,'mostrar',{
+Object.defineProperty(Product.prototype,'mostrar',{
     get: function () {
         return this._preco
     }
@@ -412,12 +412,18 @@ Object.defineProperties(Product.prototype.mostrar,'mostrar',{
 })
 
 Product.prototype.aumenta = function (valor){
-    this._saldo += valor;
+    this._preco += valor;
 }
 
 Product.prototype.diminui = function (valor){
-    this._saldo -= valor;
+    this._preco -= valor;
 }
+
+const OlaProduto = new Product('paulo',17)
+console.log(OlaProduto)
+OlaProduto.aumenta(50)
+console.log(OlaProduto.valor)
+
 
 
 
