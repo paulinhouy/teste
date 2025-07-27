@@ -433,6 +433,11 @@ OlaProduto.diminui(60)
 console.log(OlaProduto._preco)
 Camiseta.prototype = Object.create(Product.prototype);
 Camiseta.prototype.constructor = Camiseta;
+
+const OlaCamiseta = new Camiseta('tshirt',17,'red')
+console.log(OlaCamiseta)
+OlaCamiseta.aumenta(50)
+console.log(OlaCamiseta._preco)
 console.log(OlaProduto instanceof Product)
 console.log(OlaProduto instanceof Camiseta)
 
