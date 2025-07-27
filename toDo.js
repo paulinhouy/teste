@@ -368,22 +368,20 @@ Criar no prototype um método depositar(valor) que aumenta o saldo.
 Criar no prototype um método sacar(valor) que diminui o saldo, mas só se houver saldo suficiente. Caso contrário, mostrar mensagem: "Saldo insuficiente". */
 
 function ContaBancaria (cliente,saldoInicial) {
-    const cliente = cliente
-    const saldoInicial = saldoInicial;
+    this.cliente = cliente
+    this._saldoInicial = saldoInicial;
 
 }
-Object.defineProperty(ContaBancari.prototype,'saldo'{
-    value: function (){
-        return saldo
+Object.defineProperty(ContaBancaria.prototype,'saldo',{
+    get:function () {
+        this._saldoInicial = saldoInicial
     }
 })
 
-ContaBancaria.prototype.depositar = function (valor){
-    saldoInicial += valor
+ContaBancaria.prototype.depositar = function (){
+    this._saldo += saldo
 }
-ContaBancaria.prototype.sacar = function (valor){
-    saldoInicial -= valor 
+ContaBancaria.prototype.sacar = function (){
+    this._saldo -= saldo
 }
 
-ContaBancaria('paulo',1000)
-ContaBancaria.depositar(100)
