@@ -431,6 +431,9 @@ OlaProduto.aumenta(50)
 console.log(OlaProduto._preco)
 OlaProduto.diminui(60)
 console.log(OlaProduto._preco)
+
+
+
 Camiseta.prototype = Object.create(Product.prototype);
 Camiseta.prototype.constructor = Camiseta;
 
