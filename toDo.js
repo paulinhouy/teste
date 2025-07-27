@@ -419,22 +419,22 @@ Product.prototype.diminui = function (valor){
     this._preco -= valor;
 }
 
+
+function Camiseta (nome,preco,cor){
+    Product.call(this, nome, preco); // pega nome e idade de Pessoa
+    this.cor = cor;
+
+}
 const OlaProduto = new Product('paulo',17)
 console.log(OlaProduto)
 OlaProduto.aumenta(50)
 console.log(OlaProduto._preco)
 OlaProduto.diminui(60)
 console.log(OlaProduto._preco)
-
-function Camiseta (nome,preco,cor){
-    Product.call(this, nome, preco); // pega nome e idade de Pessoa
-  this.cor = cor;
-
-}
 Camiseta.prototype = Object.create(Product.prototype);
 Camiseta.prototype.constructor = Camiseta;
-console.log(Product.prototype)
-console.log(Camiseta.prototype)
+console.log(OlaProduto instanceof Product)
+console.log(OlaProduto instanceof Camiseta)
 
 
 
