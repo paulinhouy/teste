@@ -459,4 +459,6 @@ console.log(objetoMap.get('nome'));
 console.log(objetoMap.get('fruta'));
 console.log(objetoMap.get('idade'))
 
+console.log(objetoMap.has('fruta'))
 
+console.log()
