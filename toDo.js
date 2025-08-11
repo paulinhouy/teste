@@ -447,5 +447,13 @@ console.log(Camiseta.prototype)
 
 
 
+//Objeto Map()
 
+const objetoMap = new Map()
+
+objetoMap.set('nome','paulo');
+objetoMap.set('fruta','banana');
+objetoMap.set(12,'idadae');
+
+console.log(objetoMap.get('nome'));
 
