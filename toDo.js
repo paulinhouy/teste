@@ -462,3 +462,4 @@ console.log(objetoMap.get('idade'))
 console.log(objetoMap.has('fruta'))
 
 console.log(objetoMap.delete(12))
+console.log(objetoMap.size)
