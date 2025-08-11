@@ -457,5 +457,6 @@ objetoMap.set(12,'idade');
 
 console.log(objetoMap.get('nome'));
 console.log(objetoMap.get('fruta'));
+console.log(objetoMap.get('idade'))
 
 
