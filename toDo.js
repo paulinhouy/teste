@@ -453,7 +453,9 @@ const objetoMap = new Map()
 
 objetoMap.set('nome','paulo');
 objetoMap.set('fruta','banana');
-objetoMap.set(12,'idadae');
+objetoMap.set(12,'idade');
 
 console.log(objetoMap.get('nome'));
+console.log(objetoMap.get('fruta'));
+
 
